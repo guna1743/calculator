@@ -1,0 +1,212 @@
+html{
+    background-color: #68B2DB;
+    
+}
+
+body{
+    height: 100vh;
+    /* background-image: url("cal1.jpg"); */
+    background-color: #68B2DB;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.cgpacalc_container{
+    height: auto;
+    width: 500px;
+    text-align: center;
+
+    border-radius: 5px;
+    color: black;
+}
+.cgpacalc_container > .cgpacalc_title{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+.cgpacalc_container > input{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    background-color:white;
+    color: grey;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    margin:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::placeholder{
+    color:gray;
+    font-size: 15px;
+}
+.cgpacalc_container .cgpacalc_output h3{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.cgpacalc_container .cgpacalc_output #res,.cgpacalc_container .cgpacalc_output #sub{
+    cursor: pointer;
+    
+}
+.cgpacalc_container .cgpacalc_output #res{
+    margin-left: 15px;
+        
+}
+
+.container{
+    width:100%;
+    min-width:100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* .container{
+    width:100%;
+    min-width:100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+} */
+/* .logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+} */
+.menu{
+    width:25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+/* nav ul{
+    width: 100%;
+} */
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+ 
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: #ff5ea2;
+
+}
+.heading{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+.base{
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    float:none;
+   
+    text-align: center;
+}
+.block{
+    width:405px;
+    padding:5px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    
+}
+.container_c{
+    width:520px;
+    height:auto;
+    margin:100px auto;
+    background-color: #eee;
+    border-radius: 25px;
+    float:none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.block > input{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    background-color:white;
+    color: grey;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    margin:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cgpacalc_title{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+@media only screen and (max-width:700px){
+    nav ul{
+        width:100%;
+        background: linear-gradient(#ff469f,#ff6062);
+        position:absolute;
+        top:75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+ nav ul li a{
+     color:#fff;
+ }
+ .menu{
+     display: block;
+ }
+ #menulist{
+     overflow:hidden;
+     transition: 0.5s;
+ }
+ .col-1{
+     flex-basis: 100%;
+ }
+ .col-1 h2{
+     font-size: 35px;
+ }
+ .col-2{
+     flex-basis: 100%;
+ }
+ .col-2 h2{
+     font-size: 35px;
+ }
+ /* .row{
+     flex-direction: column-reverse;
+     margin: 50px 0;
+ } */
+ button:hover img{
+     display: block;
+ }
+ }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>AGE CALCULATOR</title>
+    <style>
+        html {
+            background-color: mediumpurple;
+        }
+
+        body {
+            background-color: yellow;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <center>
+        <h2>AGE CALCULATOR</h2>
+        <div class="container_c">
+            <form>
+                <div class="base">
+
+                    <div class="block">
+                        <p class="title">Date</p>
+                        <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1"
+                            maxlength="2" />
+                    </div>
+                    <div class="block">
+                        <p class="title">Month</p>
+                        <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1"
+                            maxlength="2" />
+                    </div>
+                    <div class="block">
+                        <p class="title">Year</p>
+                        <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="2"
+                            maxlength="4" />
+                    </div>
+                </div>
+
+               
+                <br>
+
+                <div id="age"></div>
+
+            </form>
+        </div>
+        <div>
+            <div class="enter1">
+                <!-- <input type="button" name="submit" id="Submit" onClick="age()" /> -->
+                <button class="btn btn-success" style=" margin-right: 20px;" name="submit"
+                    onClick="age()">ANSWER</button>
+                <button class="btn btn-primary" style=" margin-right: 20px;" id="res" onClick="reset()">RESET</button>
+                <button class="btn btn-dark" style=" margin-right: 20px;"
+                    onclick="window.location.href = 'ebb.html';">BACK</button>
+            </div>
+        </div>
+        <script src="age.js"></script>
+    </center>
+</body>
+
+
+</html>

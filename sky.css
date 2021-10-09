@@ -1,0 +1,146 @@
+html {
+    background-color: #68DB8A;
+}
+body{
+    height: 100vh;
+    background-color: #68DB8A;
+    /* background-image: url("cal1.jpg"); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.cgpacalc_container{ 
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+}
+.cgpacalc_container > .cgpacalc_title{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+div > input{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    background-color:white;
+    color: grey;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    margin:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dropdown{
+    padding: 10px;
+    
+}
+span > input{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    background-color:white;
+    color: grey;
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+    margin:10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+   /* .dropdown{
+       padding: 5px;
+       width:15px;
+       height:15px;
+   } */
+.container{
+    width:100%;
+    min-width:100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.menu{
+    width:25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+/* nav ul{
+    width: 100%;
+} */
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+ 
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color: #ff5ea2;
+
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width:100%;
+        background: linear-gradient(#ff469f,#ff6062);
+        position:absolute;
+        top:75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+ nav ul li a{
+     color:#fff;
+ }
+ .menu{
+     display: block;
+ }
+ #menulist{
+     overflow:hidden;
+     transition: 0.5s;
+ }
+ .col-1{
+     flex-basis: 100%;
+ }
+ .col-1 h2{
+     font-size: 35px;
+ }
+ .col-2{
+     flex-basis: 100%;
+ }
+ .col-2 h2{
+     font-size: 35px;
+ }
+ /* .row{
+     flex-direction: column-reverse;
+     margin: 50px 0;
+ } */
+ button:hover img{
+     display: block;
+ }
+ }

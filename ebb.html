@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sky.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>EB BILL CALCULATOR</title>
+    <style>
+        body {
+            background-color:yellow;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+        <center>
+        <div class="cgpacalc_container">
+            <h2>EB Bill CALCULATOR</h2>
+            <br>
+            <!-- <input type="text" id="cat" placeholder="Enter category"> -->
+            <div class="dropdown">
+                <select id="select1">
+                    <option value="1" class="dropdown-item">Domestic</option>
+                    <option value="2" class="dropdown-item">Commercial</option>
+                </select>
+
+                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Category
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="select1">
+                    <a class="dropdown-item" value="1">Domestic</a>
+                    <a class="dropdown-item" value="2">Commercial</a>
+
+                </div> -->
+
+                <!-- <br />
+                <button onClick="GetSelectedItem('select1');">Get Selected Item</button> -->
+            </div>
+            <br>
+            <input type="text" id="unit" placeholder="Enter total units">
+            <br>
+            <input type="text" id="kw" placeholder="Enter kW">
+            <br>
+            <div class="cgpacalc_output">
+                <h3>TOTAL AMOUNT:</h3>
+                <button id="sub" class="btn btn-success" style=" margin-right: 20px;">ANSWER</button>
+                <button id="res" class="btn btn-primary" style=" margin-right: 20px;">RESET</button>
+                <button class="btn btn-danger" style=" margin-right: 20px;"
+                    onclick="window.location.href = 'age.html';">NEXT</button>
+                    <button class="btn btn-dark" style=" margin-right: 20px;"
+                    onclick="window.location.href = 'gpa.html';">BACK</button>
+            </div>
+        </div>
+        <script>
+            function GetSelectedItem(el) {
+                var e = document.getElementById(el);
+                var strSel = "The Value is: " + e.options[e.selectedIndex].value + " and text is: " + e.options[e.selectedIndex].text;
+                alert(strSel);
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="ebb.js"></script>
+    </center>
+</body>
+
+
+</html>
