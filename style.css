@@ -1,12 +1,12 @@
 html{
-    background-color: #68B2DB;
+    background-color: yellow;
     
 }
 
 body{
     height: 100vh;
     /* background-image: url("cal1.jpg"); */
-    background-color: #68B2DB;
+    background-color: yellow;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
